@@ -17,6 +17,7 @@ def generate_password():
     	password.append(symbols[randrange(len(password))])
     shuffle(password)
     password = "".join(password)
+    passw.delete(0,END)
     passw.insert(0, password)
 
 
