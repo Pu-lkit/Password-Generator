@@ -31,7 +31,7 @@ def save():
         is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered:\nEmail:{email}\nPassword:{password}\nIs it okay?")
         if is_ok:
             with open("data.txt", "a") as file:
-                file.write(f"Website is {website}\nYour Email-Id is{email}\nYour Password is {password}\n\n")
+                file.write(f"Website is {website}\nYour Email-Id is {email}\nYour Password is {password}\n\n")
                 passw.delete(0, END)
                 web.delete(0, END)
                 e_id.delete(0, END)
